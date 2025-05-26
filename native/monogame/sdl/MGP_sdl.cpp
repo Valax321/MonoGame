@@ -642,6 +642,11 @@ mgbool MGP_Platform_PollEvent(MGP_Platform* platform, MGP_Event& event_)
     return false;
 }
 
+void MGP_Platform_StartRunLoop(MGP_Platform* platform)
+{
+    assert(platform != nullptr);
+}
+
 mgbool MGP_Platform_BeforeRun(MGP_Platform* platform)
 {
 	assert(platform != nullptr);
